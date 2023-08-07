@@ -1,0 +1,36 @@
+{
+  "name": "colours",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.6.12",
+  "description": "color palette",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:fix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "c": "rm pnpm-lock.yaml package-lock.json & rm -rf node_modules .output"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
+    "@arco-design/web-vue": "^2.49.3",
+    "@iconify-json/carbon": "^1.1.19",
+    "@julr/unocss-preset-forms": "^0.0.5",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@pinia/nuxt": "^0.4.11",
+    "@types/node": "^20.4.8",
+    "@unocss/eslint-config": "^0.54.2",
+    "@unocss/nuxt": "^0.54.2",
+    "@vueuse/nuxt": "^10.3.0",
+    "consola": "^3.2.3",
+    "crypto-js": "^4.1.1",
+    "eslint": "^8.46.0",
+    "lodash-es": "^4.17.21",
+    "nuxt": "^3.6.5",
+    "pinia": "^2.1.6",
+    "sass": "^1.64.2",
+    "typescript": "^5.1.6"
+  }
+}
