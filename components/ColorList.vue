@@ -12,7 +12,22 @@ const onCopy = (source: string) => {
   })
 }
 
+let timer: NodeJS.Timer
+const loopThemeColor = () => {
+  clearTimeout(timer)
+  timer = setTimeout(() => {
+    const random = Math.floor(Math.random() * colors.value.length)
+    const color = colors.value[random]
+    setThemeColor(color.name)
+
+    loopThemeColor()
+  }, 2500)
+}
+
+$onClient(loopThemeColor)
+
 const onChangeThemeColor = (color: string) => {
+  loopThemeColor()
   setThemeColor(color)
 }
 </script>
