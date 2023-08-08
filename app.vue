@@ -1,10 +1,4 @@
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Colours',
-  description: 'CSS Color Module Information.',
-  keywords: 'colours, colors, css, w3c, web',
-})
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div bg="dark:dark-900" min-h-screen>
