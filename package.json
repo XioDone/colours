@@ -14,16 +14,16 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
-    "@arco-design/web-vue": "^2.49.3",
+    "@arco-design/web-vue": "^2.50.0",
     "@iconify-json/carbon": "^1.1.19",
     "@julr/unocss-preset-forms": "^0.0.5",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
     "@pinia/nuxt": "^0.4.11",
-    "@types/node": "^20.4.8",
-    "@unocss/eslint-config": "^0.54.2",
-    "@unocss/nuxt": "^0.54.2",
-    "@vercel/analytics": "^1.0.1",
+    "@types/node": "^20.4.9",
+    "@unocss/eslint-config": "^0.55.0",
+    "@unocss/nuxt": "^0.55.0",
+    "@vercel/analytics": "^1.0.2",
     "@vueuse/nuxt": "^10.3.0",
     "consola": "^3.2.3",
     "crypto-js": "^4.1.1",
@@ -31,7 +31,7 @@
     "lodash-es": "^4.17.21",
     "nuxt": "^3.6.5",
     "pinia": "^2.1.6",
-    "sass": "^1.64.2",
+    "sass": "^1.65.1",
     "typescript": "^5.1.6"
   }
 }
