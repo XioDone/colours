@@ -2,7 +2,7 @@
   "name": "colours",
   "version": "1.0.1",
   "private": true,
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.7.4",
   "description": "color palette",
   "scripts": {
     "build": "nuxt build",
@@ -13,25 +13,24 @@
     "c": "rm pnpm-lock.yaml package-lock.json & rm -rf node_modules .output"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.40.2",
-    "@arco-design/web-vue": "^2.50.0",
-    "@iconify-json/carbon": "^1.1.19",
+    "@antfu/eslint-config": "^0.41.0",
+    "@arco-design/web-vue": "^2.51.1",
+    "@iconify-json/carbon": "^1.1.21",
     "@julr/unocss-preset-forms": "^0.0.5",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
     "@pinia/nuxt": "^0.4.11",
-    "@types/node": "^20.4.9",
-    "@unocss/eslint-config": "^0.55.0",
-    "@unocss/nuxt": "^0.55.0",
+    "@types/node": "^20.5.9",
+    "@unocss/eslint-config": "^0.55.7",
+    "@unocss/nuxt": "^0.55.7",
     "@vercel/analytics": "^1.0.2",
-    "@vueuse/nuxt": "^10.3.0",
+    "@vueuse/nuxt": "^10.4.1",
     "consola": "^3.2.3",
     "crypto-js": "^4.1.1",
-    "eslint": "^8.46.0",
-    "lodash-es": "^4.17.21",
-    "nuxt": "^3.6.5",
+    "eslint": "^8.48.0",
+    "nuxt": "^3.7.1",
     "pinia": "^2.1.6",
-    "sass": "^1.65.1",
-    "typescript": "^5.1.6"
+    "sass": "^1.66.1",
+    "typescript": "^5.2.2"
   }
 }

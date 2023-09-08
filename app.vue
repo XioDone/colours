@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div bg="dark:dark-900" min-h-screen>
+  <div bg="dark:dark-900/99" min-h-screen bg-light-600>
     <Header />
     <ColorList />
     <Footer />

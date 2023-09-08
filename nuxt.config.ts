@@ -1,9 +1,4 @@
 export default defineNuxtConfig({
-  // app: {
-  //   head: {
-  //     link: [{ rel: 'icon', href: '/favicon.svg' }],
-  //   },
-  // },
   imports: {
     dirs: ['./hooks/**'],
   },
@@ -19,10 +14,17 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  vue: {
+    defineModel: true,
+    propsDestructure: true,
+  },
+  devServer: {
+    port: 8999,
+  },
   devtools: {
     enabled: true,
     timeline: {
-      enabled: false,
+      enabled: true,
     },
   },
 })

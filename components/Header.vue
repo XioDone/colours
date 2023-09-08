@@ -7,6 +7,7 @@ const onSearch = () => {
 const onClear = () => {
   keyword.value = ''
   matchColor(keyword.value)
+  $clientTask('loopThemeColor')()
 }
 </script>
 
