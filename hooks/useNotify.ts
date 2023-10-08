@@ -50,13 +50,13 @@ const useNotify: Notify = (_opts: NotifyOptions) => {
     return { close() {} }
   }
   const options = { ...defaultConfig, ..._opts }
-  const { type, ...config } = options
+  const { type, message = '', ...config } = options
 
   const isExclude = !NotifyType.includes(type)
   if (isExclude) {
     throw cs.error(`${type} is not a valid type`)
   }
-  const configWrapper = { ...config, content: config.message = '' }
+  const configWrapper = { ...config, content: message }
   return Notification[type](configWrapper)
 }
 
