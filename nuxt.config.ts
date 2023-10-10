@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
+    'arco-design-nuxt-module',
   ],
   experimental: {
     inlineSSRStyles: false,
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
     propsDestructure: true,
   },
   devServer: {
-    port: 8999,
+    port: 5300,
   },
   devtools: {
     enabled: true,

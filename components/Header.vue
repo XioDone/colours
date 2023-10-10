@@ -18,13 +18,13 @@ const onClear = () => {
         b="1 gray-400"
         w="260px"
         h="36px"
+        hide
         mr-5
-        hidden
         items-center
         overflow-hidden
         rounded
         text-dark
-        md:flex
+        md="flex!"
         text="dark:gray-200"
       >
         <input
@@ -45,8 +45,8 @@ const onClear = () => {
     </div>
 
     <div relative flex items-center justify-center overflow-hidden h="100%">
-      <h1 py-10 text-2xl font-bold md:text-4xl>
-        COLOURS
+      <h1 py-10 text-4xl font-bold font-caveat md:text-6xl>
+        Colours
       </h1>
       <div class="bg" />
     </div>

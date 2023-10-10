@@ -24,8 +24,17 @@ export default defineConfig({
         sans: 'DM Sans',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
+        caveat: 'Caveat',
       },
     }),
+  ],
+  shortcuts: [
+    {
+      'hide': 'hidden',
+      'flex-center': 'flex items-center justify-center',
+    },
+    [/^wh-(\w+)$/, ([, num]) => `w-${num} h-${num}`],
+    [/^fs-(\w+)$/, ([, num]) => `text-${num}`],
   ],
   theme: {
     breakpoints: {

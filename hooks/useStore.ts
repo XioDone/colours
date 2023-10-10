@@ -2,7 +2,6 @@ import type { ToRef, UnwrapNestedRefs } from 'vue'
 import type { StoreGeneric } from 'pinia'
 
 type AutoStore<T> = {
-  // eslint-disable-next-line @typescript-eslint/ban-types
   [K in keyof T]: T[K] extends Function ? T[K] : T[K] extends object ? UnwrapNestedRefs<T[K]> : ToRef<T[K]>
 }
 

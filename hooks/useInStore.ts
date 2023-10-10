@@ -2,7 +2,6 @@ import type { ToRef } from 'vue'
 import type { Store } from 'pinia'
 
 type AutoToRefs<T> = {
-  // eslint-disable-next-line @typescript-eslint/ban-types
   [K in keyof T]: T[K] extends Function ? T[K] : ToRef<T[K]>
 }
 

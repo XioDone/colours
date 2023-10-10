@@ -7,12 +7,7 @@ const config = antfu(
   {
     ignores: [],
   },
-  {
-    plugins: {
-      '@unocss': pluginUno,
-    },
-    rules: pluginUno.configs.recommended.rules,
-  },
+  pluginUno.configs.flat,
   {
     rules: {
       'curly': ['error', 'all'],
