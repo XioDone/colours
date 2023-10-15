@@ -1,6 +1,5 @@
 import type { NotificationConfig, NotificationMethod, NotificationReturn } from '@arco-design/web-vue'
 import { Notification } from '@arco-design/web-vue'
-import '@/assets/scss/arco/index.scss'
 
 // import '@arco-design/web-vue/es/notification/style/css.js'
 
