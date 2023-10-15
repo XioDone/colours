@@ -12,14 +12,14 @@ const onClear = () => {
 </script>
 
 <template>
-  <header sticky top-0 z-99 h-80px backdrop-blur-60 md:h-120px>
+  <header sticky top-0 z-99 h-80px overflow-hidden rounded-b backdrop-blur-60 md:h-120px>
     <div absolute right-10 top-5 z-1 flex>
       <div
         b="1 gray-400"
         w="260px"
         h="36px"
-        hide
         mr-5
+        hide
         items-center
         overflow-hidden
         rounded

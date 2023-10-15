@@ -41,7 +41,7 @@ const config = antfu(
       vue: pluginVue,
     },
     rules: {
-      // "vue/attribute-hyphenation": ["warn", "never", { "ignore": ["custom-prop"] }], // props attrs - disabled
+      'vue/attribute-hyphenation': ['warn', 'never', { ignore: ['custom-prop'] }], // props attrs - disabled
       'vue/v-on-event-hyphenation': ['warn', 'never', { ignore: ['custom-event'] }], // v-on
     },
   },

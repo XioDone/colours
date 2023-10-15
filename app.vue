@@ -1,23 +1,56 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div bg="dark:dark-900/99" min-h-screen bg-light-600>
+  <div id="layout-body" min-h-screen>
     <Header />
-    <ColorList />
+    <main id="main">
+      <ColorList />
+    </main>
     <Footer />
   </div>
 </template>
 
 <style lang="scss">
+::-webkit-scrollbar {
+  width: 15px;
+  display: block;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  min-height: 100px;
+  border: 6px solid transparent;
+  display: block;
+  background: #787878;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
 html {
   scroll-behavior: smooth;
   color: var(--theme-color);
   transition: all 0.4s ease-in-out;
 }
+
+body {
+  // transition: background-color 0.3s ease-in-out;
+  @apply: dark:bg-dark-900/99  bg-light-700 font-nunito;
+}
+
 a {
-  transition: all 0.4s ease-in-out;
   &:hover {
     color: gray;
   }
+}
+
+#layout-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  flex: 1;
 }
 </style>

@@ -20,11 +20,13 @@ export default defineConfig({
     presetForms(),
     presetTypography(),
     presetWebFonts({
+      // provider: 'bunny',
       fonts: {
         sans: 'DM Sans',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
         caveat: 'Caveat',
+        nunito: 'Nunito',
       },
     }),
   ],
