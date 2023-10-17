@@ -15,9 +15,7 @@ export const initTheme = () => {
 
 export const setTheme = (isDark: Ref<boolean>) => {
   return $onClient(async () => {
-    await new Promise(resolve => {
-      setTimeout(resolve)
-    })
+    await $sleep()
 
     useState<boolean>('isDark', () => isDark)
 

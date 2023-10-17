@@ -13,12 +13,23 @@ const onClear = () => {
 
 <template>
   <header sticky top-0 z-99 h-80px overflow-hidden rounded-b backdrop-blur-60 md:h-120px>
-    <div absolute right-10 top-5 z-1 flex>
+    <div relative flex items-center justify-center overflow-hidden h="100%">
+      <h1 py-10 text-4xl font-bold font-caveat md:text-6xl>
+        Colours
+      </h1>
+      <div class="bg" />
+    </div>
+
+    <div absolute right-10 top-5 z-1>
+      <div flex items-center justify-end>
+        <PerfSwitch />
+        <DarkSwitch />
+      </div>
       <div
         b="1 gray-400"
         w="260px"
         h="36px"
-        mr-5
+        mt-3
         hide
         items-center
         overflow-hidden
@@ -41,14 +52,6 @@ const onClear = () => {
         >
         <div v-show="keyword.length" i-carbon:close ma-10px cursor-pointer @click="onClear" />
       </div>
-      <DarkToggle h="36px" />
-    </div>
-
-    <div relative flex items-center justify-center overflow-hidden h="100%">
-      <h1 py-10 text-4xl font-bold font-caveat md:text-6xl>
-        Colours
-      </h1>
-      <div class="bg" />
     </div>
   </header>
 </template>

@@ -15,7 +15,12 @@ const onCopy = (source: string) => {
 }
 
 let timer: NodeJS.Timeout
+const { perfMode } = $perfMode()
 const loopThemeColor = () => {
+  if (perfMode.value) {
+    return
+  }
+
   clearTimeout(timer)
   timer = setTimeout(() => {
     const random = Math.floor(Math.random() * colors.value.length)
@@ -33,6 +38,9 @@ const loopThemeColor = () => {
 $onClient(loopThemeColor)
 
 $clientTask('loopThemeColor', loopThemeColor)
+$clientTask('clearLoopThemeColor', () => {
+  clearTimeout(timer)
+})
 
 const onChangeThemeColor = (color: string) => {
   loopThemeColor()
@@ -117,16 +125,13 @@ $onClient(() => {
       <div v-for="(item, index) in colors" :key="index" @mouseenter="onChangeThemeColor(item.name)">
         <div
           :style="`background-color:${item.name}`"
+          class="group"
           relative
           aspect-1
           flex
-          flex-col
-          items-center
-          justify-center
-          gap-4
+          flex-center
           overflow-hidden
           rounded-md
-          class="group"
         >
           <div
             group-hover="opacity-100"
@@ -136,20 +141,22 @@ $onClient(() => {
             top-3
             cursor-pointer
             fs-5
-            opacity-100
+            opacity-0
             :class="{ 'c-light-9': item.name === 'black' }"
             @click="onOpenColorPaletteDialog(item)"
           />
 
-          <span class="code-tag" @click="onCopy(item.name)">
-            {{ item.name }}
-          </span>
-          <span class="code-tag" @click="onCopy(item.hex)">
-            {{ item.hex }}
-          </span>
-          <span class="code-tag" @click="onCopy(`rgb(${item.rgb})`)">
-            {{ item.rgb }}
-          </span>
+          <div group-hover="rotate-y-0" flex flex-col gap-4>
+            <span class="code-tag" @click="onCopy(item.name)">
+              {{ item.name }}
+            </span>
+            <span class="code-tag" @click="onCopy(item.hex)">
+              {{ item.hex }}
+            </span>
+            <span class="code-tag" @click="onCopy(`rgb(${item.rgb})`)">
+              {{ item.rgb }}
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -163,7 +170,7 @@ $onClient(() => {
         <span fs-6 font-nunito>{{ selectedColor?.name }}</span>
       </template>
       <div v-if="paletteDialogVisible">
-        <ColorSlider :initColor="selectedColor.hsl" />
+        <ColorSlider :init-color="selectedColor.hsl" />
 
         <div max-h="50vh" overflow="x-hidden y-auto" rounded-md>
           <div grid grid-cols-5 p-2>

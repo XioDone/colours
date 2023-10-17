@@ -1,9 +1,9 @@
 {
   "name": "colours",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
-  "packageManager": "pnpm@8.9.1",
+  "packageManager": "pnpm@8.9.2",
   "description": "color palette",
   "scripts": {
     "build": "nuxt build",
@@ -22,7 +22,7 @@
     "@julr/unocss-preset-forms": "^0.0.5",
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
-    "@pinia/nuxt": "^0.5.0",
+    "@pinia/nuxt": "^0.5.1",
     "@types/color": "^3.0.4",
     "@types/node": "^20.8.6",
     "@unocss/eslint-config": "^0.56.5",

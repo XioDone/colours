@@ -7,7 +7,7 @@ const isDark = computed(() => {
 
 setTheme(isDark)
 
-const onToggle = () => {
+const onSwitch = () => {
   color.preference = isDark.value ? 'light' : 'dark'
   setTheme(isDark)
 }
@@ -27,7 +27,7 @@ useHead({
 </script>
 
 <template>
-  <button class="!outline-none" title="Toggle theme mode" role="button" @click="onToggle()">
-    <div class="i-carbon-sun dark:i-carbon-moon" text-5 hover:bg="green" />
+  <button hover="bg-dark-7/45 c-green" rounded p-5px ring-0 title="Switch theme mode" role="button" @click="onSwitch()">
+    <div class="i-carbon-sun dark:i-carbon-moon" text-5 />
   </button>
 </template>
