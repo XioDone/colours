@@ -14,8 +14,9 @@ const onClear = () => {
 <template>
   <header sticky top-0 z-99 h-80px overflow-hidden rounded-b backdrop-blur-60 md:h-120px>
     <div relative flex items-center justify-center overflow-hidden h="100%">
-      <h1 py-10 text-4xl font-bold font-caveat md:text-6xl>
+      <h1 relative m-0 text-4xl font-bold font-caveat md:text-6xl>
         Colours
+        <span bg="red" absolute rounded-4px py-3px pl-4px pr-7px fs-15px leading-none c-light-1 shadow-md>CSS</span>
       </h1>
       <div class="bg" />
     </div>
