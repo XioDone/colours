@@ -38,6 +38,7 @@ const onClear = () => {
         text-dark
         md="flex!"
         text="dark:gray-200"
+        class="[&:has(input:focus)]:b-green"
       >
         <input
           v-model="keyword"

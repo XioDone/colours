@@ -121,8 +121,15 @@ $onClient(() => {
       xl:grid-cols-5
       xxl:grid-cols-6
       all:transition-400
+      role="list"
     >
-      <div v-for="(item, index) in colors" :key="index" @mouseenter="onChangeThemeColor(item.name)">
+      <div
+        v-for="(item, index) in colors"
+        :key="index"
+        role="listitem"
+        :tabindex="index + 1"
+        @mouseenter="onChangeThemeColor(item.name)"
+      >
         <div
           :style="`background-color:${item.name}`"
           class="group"
