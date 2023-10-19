@@ -7,12 +7,13 @@ const onSwitch = () => {
 
 <template>
   <button
-    :class="{ 'c-green': perfMode }"
-    hover="bg-dark-7/45"
+    :class="{ 'c-green!': perfMode }"
+    hover="bg-bluegray-4/30"
     rounded
     p-5px
     title="Switch efficiency mode"
-    c-gray
+    c-gray-5
+    dark:c-gray
     @click="onSwitch()"
   >
     <i i-carbon:lightning block text-5 />

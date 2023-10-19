@@ -178,10 +178,11 @@ $onClient(() => {
               v-for="(item, index) in hslLightnessColors"
               :key="item.hex"
               :style="`background-color: ${item.hex}`"
-              :class="{ 'c-dark': index > 14 }"
+              :class="{ 'c-dark!': index > 14 }"
               aspect-1
               flex
               items-end
+              c-light
             >
               <div inline-flex flex-col class="[&>*]:rounded [&>*]:p-1">
                 <span

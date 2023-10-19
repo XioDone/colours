@@ -27,7 +27,7 @@ useHead({
 </script>
 
 <template>
-  <button hover="bg-dark-7/45 c-green" rounded p-5px ring-0 title="Switch theme mode" role="button" @click="onSwitch()">
+  <button hover="bg-bluegray-4/30 c-green" rounded p-5px ring-0 title="Switch theme mode" role="button" @click="onSwitch()">
     <div class="i-carbon-sun dark:i-carbon-moon" text-5 />
   </button>
 </template>

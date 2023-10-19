@@ -16,7 +16,7 @@ const onClear = () => {
     <div relative flex items-center justify-center overflow-hidden h="100%">
       <h1 relative m-0 text-4xl font-bold font-caveat md:text-6xl>
         Colours
-        <span bg="red" absolute rounded-4px py-3px pl-4px pr-7px fs-15px leading-none c-light-1 shadow-md>CSS</span>
+        <span bg="red" absolute rounded-4px py-3px pl-4px pr-7px fs-15px leading-none c-light-1 shadow-sm>CSS</span>
       </h1>
       <div class="bg" />
     </div>
