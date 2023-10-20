@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   ],
   experimental: {
     inlineSSRStyles: false,
+    asyncContext: true,
   },
   css: ['@unocss/reset/tailwind.css'],
   colorMode: {

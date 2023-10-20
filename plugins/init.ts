@@ -1,4 +1,5 @@
 import { inject as analytics } from '@vercel/analytics'
+import { version } from '@/package.json'
 
 export default defineNuxtPlugin(app => {
   useHead({
@@ -9,6 +10,8 @@ export default defineNuxtPlugin(app => {
     ],
     link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   })
+
+  $logBadge('App', `v${version}`)
 
   if (isDev) {
     return
