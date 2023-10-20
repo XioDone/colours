@@ -1,4 +1,5 @@
 export const setThemeColor = (color: string) => {
+  $states('themeColor', color)
   document.documentElement.style.setProperty('--theme-color', color)
 }
 
@@ -7,7 +8,7 @@ export const initTheme = () => {
     return
   }
 
-  const isDark = useState<boolean>('isDark').value
+  const isDark = $states<boolean>('isDark').value
 
   const color = isDark ? '#e5e7eb' : '#000'
   document.documentElement.style.setProperty('--theme-color', color)
@@ -17,7 +18,7 @@ export const setTheme = (isDark: Ref<boolean>) => {
   return $onClient(async () => {
     await $sleep()
 
-    useState<boolean>('isDark', () => isDark)
+    $states<boolean>('isDark', () => isDark)
 
     initTheme()
 

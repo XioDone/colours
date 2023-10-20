@@ -11,10 +11,9 @@ export default defineNuxtPlugin(app => {
     link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
   })
 
-  $logBadge('App', `v${version}`)
-
   if (isDev) {
     return
   }
+  $logBadge('App', `v${version}`)
   analytics()
 })
