@@ -1,6 +1,6 @@
 // README https://github.com/antfu/eslint-config
 
-import antfu, { pluginTs, pluginVue } from '@antfu/eslint-config'
+import antfu from '@antfu/eslint-config'
 import pluginUno from '@unocss/eslint-plugin'
 
 const config = antfu(

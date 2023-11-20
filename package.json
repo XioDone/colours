@@ -7,7 +7,7 @@
   "description": "color palette",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host --clipboard",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
@@ -15,20 +15,20 @@
     "c": "rm pnpm-lock.yaml package-lock.json & rm -rf node_modules .output .nuxt"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.2.1",
+    "@antfu/eslint-config": "^2.0.0",
     "@arco-design/web-vue": "^2.53.2",
     "@iconify-json/carbon": "^1.1.21",
-    "@iconify-json/tabler": "^1.1.96",
+    "@iconify-json/tabler": "^1.1.97",
     "@julr/unocss-preset-forms": "^0.1.0",
     "@nuxtjs/color-mode": "^3.3.2",
     "@pinia/nuxt": "^0.5.1",
     "@types/color": "^3.0.6",
-    "@types/node": "^20.9.1",
-    "@unocss/eslint-config": "^0.57.5",
-    "@unocss/nuxt": "^0.57.5",
+    "@types/node": "^20.9.2",
+    "@unocss/eslint-config": "^0.57.6",
+    "@unocss/nuxt": "^0.57.6",
     "@vercel/analytics": "^1.1.1",
     "@vueuse/nuxt": "^10.6.1",
-    "arco-design-nuxt-module": "^0.0.16",
+    "arco-design-nuxt-module": "^0.0.18",
     "color": "^4.2.3",
     "consola": "^3.2.3",
     "crypto-js": "^4.2.0",
@@ -36,6 +36,6 @@
     "nuxt": "^3.8.1",
     "pinia": "^2.1.7",
     "sass": "^1.69.5",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }
