@@ -15,10 +15,10 @@
     "c": "rm pnpm-lock.yaml package-lock.json & rm -rf node_modules .output .nuxt"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.3",
+    "@antfu/eslint-config": "^2.4.5",
     "@arco-design/web-vue": "^2.53.3",
     "@iconify-json/carbon": "^1.1.25",
-    "@iconify-json/tabler": "^1.1.100",
+    "@iconify-json/tabler": "^1.1.101",
     "@julr/unocss-preset-forms": "^0.1.0",
     "@nuxtjs/color-mode": "^3.3.2",
     "@pinia/nuxt": "^0.5.1",
