@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     'arco-design-nuxt-module',
   ],
   experimental: {
-    inlineSSRStyles: false,
     asyncContext: true,
   },
   css: ['@unocss/reset/tailwind.css'],

@@ -8,7 +8,6 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
-import { presetForms } from '@julr/unocss-preset-forms'
 
 export default defineConfig({
   presets: [
@@ -17,7 +16,7 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
     }),
-    presetForms(),
+    // presetForms(),
     presetTypography(),
     presetWebFonts({
       // provider: 'bunny',
@@ -25,7 +24,7 @@ export default defineConfig({
         sans: 'DM Sans',
         serif: 'DM Serif Display',
         mono: 'DM Mono',
-        caveat: 'Caveat',
+        caveat: 'Waterfall',
         nunito: 'Nunito',
       },
     }),

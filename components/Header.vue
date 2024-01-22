@@ -9,6 +9,13 @@ const onClear = () => {
   matchColor(keyword.value)
   $clientTask('loopThemeColor')()
 }
+
+const placeholderInfo = 'Type to explore...'
+const placeholder = ref('')
+
+useTyper(placeholderInfo, res => {
+  placeholder.value = res
+})
 </script>
 
 <template>
@@ -16,7 +23,7 @@ const onClear = () => {
     <div relative flex items-center justify-center overflow-hidden h="100%">
       <h1 relative m-0 text-4xl font-bold font-caveat md:text-6xl>
         Colours
-        <span bg="red" absolute rounded-4px py-3px pl-4px pr-7px fs-15px leading-none c-light-1 shadow-sm>CSS</span>
+        <span bg="red" absolute rounded-4px py-3px pl-4px pr-7px fs-15px c-light-1 leading-none shadow-sm>CSS</span>
       </h1>
       <div class="bg" />
     </div>
@@ -25,6 +32,7 @@ const onClear = () => {
       <div flex items-center justify-end>
         <PerfSwitch />
         <DarkSwitch />
+        <ScreenSwitch />
       </div>
       <div
         b="1 gray-400"
@@ -43,7 +51,7 @@ const onClear = () => {
         <input
           v-model="keyword"
           h="100%"
-          placeholder="Type to explore..."
+          :placeholder
           flex-1
           b-0
           bg-transparent
@@ -51,7 +59,7 @@ const onClear = () => {
           focus:outline-none
           placeholder-gray
           @input="onSearch"
-        >
+        />
         <div v-show="keyword.length" i-carbon:close ma-10px cursor-pointer @click="onClear" />
       </div>
     </div>
