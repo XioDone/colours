@@ -59,7 +59,7 @@ useTyper(placeholderInfo, res => {
           focus:outline-none
           placeholder-gray
           @input="onSearch"
-        />
+        >
         <div v-show="keyword.length" i-carbon:close ma-10px cursor-pointer @click="onClear" />
       </div>
     </div>
