@@ -2,11 +2,11 @@
 
 <template>
   <div id="layout-body" min-h-screen>
-    <Header />
+    <AppHeader />
     <main id="main">
       <ColorList />
     </main>
-    <Footer />
+    <AppFooter />
   </div>
 </template>
 
