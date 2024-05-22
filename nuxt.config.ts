@@ -21,6 +21,23 @@ export default defineNuxtConfig({
   devServer: {
     port: 5300,
   },
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+    },
+  },
+  features: {
+    // For UnoCSS
+    inlineStyles: false,
+    devLogs: false,
+    compatibilityVersion: 4,
+  },
   devtools: {
     enabled: true,
     timeline: {

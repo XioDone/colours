@@ -31,7 +31,7 @@
 html {
   scroll-behavior: smooth;
   color: var(--theme-color);
-  transition: all 0.4s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 body {

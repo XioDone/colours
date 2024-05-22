@@ -8,6 +8,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { useShortcuts } from 'unoist'
 
 export default defineConfig({
   presets: [
@@ -30,12 +31,7 @@ export default defineConfig({
     }),
   ],
   shortcuts: [
-    {
-      'hide': 'hidden',
-      'flex-center': 'flex items-center justify-center',
-    },
-    [/^wh-(\w+)$/, ([, num]) => `w-${num} h-${num}`],
-    [/^fs-(\w+)$/, ([, num]) => `text-${num}`],
+    ...useShortcuts(),
   ],
   theme: {
     breakpoints: {
