@@ -33,7 +33,7 @@
     "consola": "^3.2.3",
     "crypto-js": "^4.2.0",
     "eslint": "^9.5.0",
-    "nuxt": "npm:nuxt-nightly@latest",
+    "nuxt": "^3.12.2",
     "pinia": "^2.1.7",
     "sass": "^1.77.6",
     "typescript": "^5.5.2",
