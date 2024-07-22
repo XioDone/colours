@@ -36,7 +36,6 @@ export default defineNuxtConfig({
     // For UnoCSS
     inlineStyles: false,
     devLogs: false,
-    compatibilityVersion: 4,
   },
   devtools: {
     enabled: true,
