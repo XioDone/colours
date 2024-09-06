@@ -4,7 +4,7 @@
   <a href="https://colours-x.vercel.app">⚡️ Colours</a>
 </p>
 
-![preview](assets/imgs/screenshot.jpg)
+![preview](app/assets/imgs/screenshot.png)
 
 ### Reference: CSS Color Module Level 4
 
