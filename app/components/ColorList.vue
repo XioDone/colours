@@ -102,7 +102,7 @@ $onClient(() => {
       return
     }
     const entry = entries[0]
-    const { width } = entry.contentRect
+    const { width = 15 } = entry?.contentRect || {}
     document.body.style.width = `${width - 15}px`
   })
 })

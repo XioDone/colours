@@ -42,4 +42,4 @@ const useToMilliseconds = (options: Options) => {
   return Math.round(msRet)
 }
 
-export { useToSeconds, useToSeconds as $toSeconds, useToMilliseconds, useToMilliseconds as $toMilliseconds }
+export { useToMilliseconds, useToMilliseconds as $toMilliseconds, useToSeconds, useToSeconds as $toSeconds }

@@ -1,4 +1,4 @@
-import type { CookieOptions } from 'nuxt/dist/app/composables'
+import type { CookieOptions } from '#app'
 
 export interface CookieConfig<T> extends Omit<CookieOptions, 'maxAge' | 'default'> {
   maxAge?: number | boolean

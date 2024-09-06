@@ -1,5 +1,5 @@
-import type { ToRef } from 'vue'
 import type { Store } from 'pinia'
+import type { ToRef } from 'vue'
 
 type AutoToRefs<T> = {
   [K in keyof T]: T[K] extends Function ? T[K] : ToRef<T[K]>

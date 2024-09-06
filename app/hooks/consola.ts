@@ -24,4 +24,4 @@ onlyDevMode.map(key => {
   c[key] = () => {}
 })
 
-export { consola as cs, c, warn, info, start, success, debug, trace, fatal, ready, prompt }
+export { c, consola as cs, debug, fatal, info, prompt, ready, start, success, trace, warn }

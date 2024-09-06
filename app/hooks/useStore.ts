@@ -1,5 +1,5 @@
-import type { ToRef, UnwrapNestedRefs } from 'vue'
 import type { StoreGeneric } from 'pinia'
+import type { ToRef, UnwrapNestedRefs } from 'vue'
 
 type AutoStore<T> = {
   [K in keyof T]: T[K] extends Function ? T[K] : T[K] extends object ? UnwrapNestedRefs<T[K]> : ToRef<T[K]>

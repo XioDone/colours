@@ -24,4 +24,4 @@ const useOnClient = <T>(fn: Fn<T>): T => {
   return fn()
 }
 
-export { useOnServer, useOnClient, useOnServer as $onServer, useOnClient as $onClient }
+export { useOnClient, useOnClient as $onClient, useOnServer, useOnServer as $onServer }
