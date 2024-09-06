@@ -1,0 +1,43 @@
+{
+  "name": "colours",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.9.0",
+  "description": "color palette",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host --clipboard",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "c": "rm -rf node_modules .output .nuxt pnpm-lock.yaml package-lock.json"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.3.2",
+    "@arco-design/web-vue": "^2.56.1",
+    "@iconify-json/carbon": "^1.2.1",
+    "@iconify-json/tabler": "^1.2.0",
+    "@nuxtjs/color-mode": "^3.4.4",
+    "@pinia/nuxt": "^0.5.4",
+    "@types/color": "^3.0.6",
+    "@types/node": "^22.5.4",
+    "@unocss/eslint-config": "^0.62.3",
+    "@unocss/nuxt": "^0.62.3",
+    "@vercel/analytics": "^1.3.1",
+    "@vueuse/nuxt": "^11.0.3",
+    "@xiodone/eslint-config": "^1.0.1",
+    "arco-design-nuxt-module": "^0.1.0",
+    "color": "^4.2.3",
+    "consola": "^3.2.3",
+    "crypto-js": "^4.2.0",
+    "eslint": "^9.9.1",
+    "nuxt": "^3.13.1",
+    "pinia": "^2.2.2",
+    "sass": "^1.78.0",
+    "typescript": "^5.5.4",
+    "unoist": "^0.0.3",
+    "vite-plugin-url-copy": "^1.1.4"
+  }
+}
