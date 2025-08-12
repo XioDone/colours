@@ -1,3 +1,3 @@
 const useMessage = ElMessage
 
-export { useMessage, useMessage as $message }
+export { useMessage as $message, useMessage }

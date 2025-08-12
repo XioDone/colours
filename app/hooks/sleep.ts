@@ -4,4 +4,4 @@ const useSleep = (ms = 0) => {
   })
 }
 
-export { useSleep, useSleep as $sleep }
+export { useSleep as $sleep, useSleep }

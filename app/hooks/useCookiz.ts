@@ -34,4 +34,4 @@ function useCookiz<T = string | null | undefined>(sources: Sources<T>, value?: T
   return res
 }
 
-export { useCookiz, useCookiz as $cookiz }
+export { useCookiz as $cookiz, useCookiz }

@@ -23,4 +23,4 @@ const usePerfMode = () => {
     switchPerfMode,
   }
 }
-export { usePerfMode, usePerfMode as $perfMode }
+export { usePerfMode as $perfMode, usePerfMode }

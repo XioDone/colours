@@ -78,4 +78,4 @@ const useCookieLog = (isLog: boolean = false, logInclude: Include | boolean = fa
   })
 }
 
-export { useCookieLog, useCookieLog as $cookieLog }
+export { useCookieLog as $cookieLog, useCookieLog }

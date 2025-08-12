@@ -29,4 +29,4 @@ const useKeyBy = <T extends { [key: string]: any }>(array: T[], predicate: KeyBy
   return result
 }
 
-export { useKeyBy, useKeyBy as $keyBy }
+export { useKeyBy as $keyBy, useKeyBy }

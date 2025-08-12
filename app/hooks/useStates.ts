@@ -40,4 +40,4 @@ function useStates<T>(...args: any): Ref<T> {
   return state
 }
 
-export { useStates, useStates as $states }
+export { useStates as $states, useStates }

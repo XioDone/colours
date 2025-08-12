@@ -45,4 +45,4 @@ const useToRefs = <T extends object>(object: T, skipNonreactive = false): UseToR
   return res
 }
 
-export { useToRefs, useToRefs as $toRefs }
+export { useToRefs as $toRefs, useToRefs }

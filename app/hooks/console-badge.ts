@@ -7,4 +7,4 @@ const useLogBadge = (param1: LogParam, param2: LogParam) => {
   )
 }
 
-export { useLogBadge, useLogBadge as $logBadge }
+export { useLogBadge as $logBadge, useLogBadge }

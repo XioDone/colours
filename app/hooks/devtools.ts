@@ -20,4 +20,4 @@ const useInjectDevtools = (key: string, value: any, isInject: boolean = true) =>
   }
 }
 
-export { useInjectDevtools, useInjectDevtools as $injectDevtools }
+export { useInjectDevtools as $injectDevtools, useInjectDevtools }

@@ -18,4 +18,4 @@ function useInStore<T extends Store>(storeFn: () => T, shouldToRefs = true): Aut
   return store
 }
 
-export { useInStore, useInStore as $inStore }
+export { useInStore as $inStore, useInStore }

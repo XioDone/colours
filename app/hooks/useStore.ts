@@ -17,4 +17,4 @@ function useStore<T extends StoreGeneric>(storeFn: () => T, shouldToRefs = true)
   }
   return store
 }
-export { useStore, useStore as $store }
+export { useStore as $store, useStore }

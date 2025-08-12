@@ -44,4 +44,4 @@ const useCookieConfig = <T>(options: CookieConfig<T> = {}): CookieOptions<T> => 
   return opts
 }
 
-export { useCookieConfig, useCookieConfig as $cookieCfg }
+export { useCookieConfig as $cookieCfg, useCookieConfig }

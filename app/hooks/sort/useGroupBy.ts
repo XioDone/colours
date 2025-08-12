@@ -17,4 +17,4 @@ function useGroupBy<T extends Source, K extends keyof T>(sourceArr: T[], key: K)
   return result
 }
 
-export { useGroupBy, useGroupBy as $groupBy }
+export { useGroupBy as $groupBy, useGroupBy }

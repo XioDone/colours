@@ -7,4 +7,4 @@
  */
 const useClone = <T>(data: T): T => JSON.parse(JSON.stringify(data))
 
-export { useClone, useClone as $clone }
+export { useClone as $clone, useClone }

@@ -1,5 +1,5 @@
-import { Notification } from '@arco-design/web-vue'
 import type { NotificationConfig, NotificationMethod, NotificationReturn } from '@arco-design/web-vue'
+import { Notification } from '@arco-design/web-vue'
 
 // import '@arco-design/web-vue/es/notification/style/css.js'
 
@@ -71,4 +71,4 @@ useNotify.clear = () => {
   })
 }
 
-export { useNotify, useNotify as $notify }
+export { useNotify as $notify, useNotify }
